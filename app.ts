@@ -39,8 +39,8 @@ if (person.role === Role.AUTHOR) {
 // person.role = [10, "admin", "user"]; // this is not allowed, you can add element only with push
 // person.role[1] = 10; // this is not allowed, second element must be number
 
-let favoriteActivities: string[];
-favoriteActivities = ["Sports"];
+let favoriteActivities: any; // <-- any type
+favoriteActivities = ["Sports", 6];
 
 console.log(person);
 
