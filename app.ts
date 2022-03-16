@@ -1,10 +1,19 @@
-const person: {
-  name: string;
-  age: number;
-} = {
-  // const person = {
+// const person: {
+//   name: string;
+//   age: number;
+// } = {
+const person = {
   name: "Irakli",
   age: 30,
+  hobbies: ["Sports", "Cooking"],
 };
 
+let favoriteActivities: string[];
+favoriteActivities = ["Sports"];
+
 console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
+  // console.log(hobby.map()); // !!! ERROR !!! property 'map' does not exist on type 'string'
+}
