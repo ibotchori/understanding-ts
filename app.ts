@@ -19,3 +19,14 @@ combineValue = add;
 // combineValue = 5 // <-- ERROR! this is not a function
 
 console.log(combineValue(2, 3));
+
+/* Function types & Callbacks */
+
+function addAndHandler(n1: number, n2: number, cb: (num: number) => void) {
+  const result = n1 + n2;
+  cb(result);
+}
+
+addAndHandler(3, 5, (result) => {
+  console.log(result);
+});

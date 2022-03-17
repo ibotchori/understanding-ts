@@ -6,10 +6,18 @@ function printResult(num) {
     console.log("Result: " + num);
 }
 printResult(add(2, 45));
-// Function types
+/* Function types */
 // this variable accept any function with 2 number parameter and return number
 var combineValue;
 combineValue = add;
 // combineValue = printResult; // <-- ERROR! this function receives one parameter
 // combineValue = 5 // <-- ERROR! this is not a function
 console.log(combineValue(2, 3));
+/* Function types & Callbacks */
+function addAndHandler(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+addAndHandler(3, 5, function (result) {
+    console.log(result);
+});
