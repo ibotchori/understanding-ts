@@ -1,8 +1,12 @@
-// Union type
+// Alias type
+type Combinbable = number | string;
+type ConversionDestructor = "as-number" | "as-text";
+
 function combine(
-  input1: number | string,
-  input2: number | string,
-  resultConversion: "as-number" | "as-text" // <--Literal types
+  // Union type
+  input1: Combinbable,
+  input2: Combinbable,
+  resultConversion: ConversionDestructor // <--Literal types
 ) {
   let result;
   if (
