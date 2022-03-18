@@ -1,2 +1,3 @@
-var userName = "Irakli";
+"use strict";
+const userName = "Irakli";
 console.log(userName);
